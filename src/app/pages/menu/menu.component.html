@@ -1,0 +1,22 @@
+<div class="menu-search">
+  <input
+    type="text"
+    [(ngModel)]="searchTerm"
+    placeholder="Search for a meal"
+  />
+  <button (click)="searchMeals()">Search</button>
+</div>
+
+<div *ngIf="meals.length > 0; else noMeals">
+  <div *ngFor="let meal of meals">
+    <div class="meal-card">
+      <h3>{{ meal.strMeal }}</h3>
+      <p>{{ meal.strArea }} - {{ meal.strCategory }}</p>
+      <img [src]="meal.strMealThumb" alt="{{ meal.strMeal }}" />
+    </div>
+  </div>
+</div>
+
+<ng-template #noMeals>
+  <p>No meals found. Try searching with a different name.</p>
+</ng-template>
