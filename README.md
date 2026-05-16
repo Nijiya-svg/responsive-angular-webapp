@@ -1,13 +1,17 @@
-# Responsive Angular Web Application
+# CoZzee Restaurant Web Application
 
-A responsive multi-page web application developed using Angular and TypeScript.
+A responsive restaurant menu web application developed using Angular and TypeScript.
 
 ## Features
-- Responsive navigation bar
-- Category sections
+- Home page
+- Interactive menu section
+- Food categories
+  - Starters
+  - Main Course
+  - Desserts
 - Contact page
-- Reusable Angular components
-- Modern UI design
+- Angular routing
+- Responsive UI design
 
 ## Technologies Used
 - Angular
@@ -28,12 +32,13 @@ ng serve
 src/
  ├── app/
  │   ├── navbar/
+ │   ├── pages/
  │   ├── categories/
- │   ├── contact/
- │   └── pages/
+ │   └── contact/
 ```
 
 ## Future Improvements
-- Backend integration
+- Online food ordering
 - Authentication system
-- API connectivity(https://angular.dev/tools/cli) page.
+- Backend integration
+- Database connectivity
